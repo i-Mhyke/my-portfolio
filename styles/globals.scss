@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&family=Orbitron:wght@800&family=Play&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Play", sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.app-font {
+  font-family: "Orbitron", sans-serif;
+}
+.hover-effect {
+  background: linear-gradient(to bottom, #b08eec 0%, #b899ee 100%);
+  background-position: 0 90%;
+  background-repeat: repeat-x;
+  background-size: 2px 3px;
+  color: #d3d3d3;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 1.25rem;
+  padding-bottom: 2px;
+  margin: 0 0.3rem 0 0.3rem;
+}
+.hover-effect.email-link {
+  font-size: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+.hover-effect.social-links {
+  font-size: 1.1rem;
+}
+.hover-effect:hover {
+  background-size: 9px 80px;
+  color: #4f4f4f;
+}
+.section-header::before {
+  display: block;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #7c3aed;
+  margin: 0.4rem auto;
+}
+.text-shadow {
+  text-shadow: 0 2px 12px #f0f;
+}
+.bouncy {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  to {
+    transform: translate(0, -25px);
+  }
+}
+// AOS Style Import
+@import "node_modules/aos/src/sass/aos.scss";
